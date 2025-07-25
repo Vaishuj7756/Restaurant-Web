@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ <html>    
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <center>
+            <div class="login_section">
+                <form name="loginf" >
+                    <br>
+                    <h1>Login Form</h1><br><br>
+                    <label>Enter Username:</label><br>
+                    <input type="text" id="tf1" required ><br><br>
+                    <label>Enter Email:</label><br>
+                    <input type="email" id="email1" required  ><br><br>
+                    <label>Enter Password:</label><br>
+                    <input type="password" id="p1" required><br><br>
+                    <button id="btn-login" onclick="login1()">Login here</button>
+                    <br><br><br>
+                </form>
+            </div>
+        </center>
+        <script>
+            function login1()
+            {
+                var Username=document.getElementById("tf1").value;
+                var pass=document.getElementById("p1").value;
+                var e1=document.getElementById("email1").value;
+
+                if(Username==='' && pass==='' && e1==='')
+                {
+                    if(Username==='' && pass==='' && e1!=='')
+                    {
+                        alert("Enter Username and password!");
+                    }
+                    else if(Username==='' && pass!=='' && e1==='')
+                    {
+                        alert("Enter Email and username!");
+                    }
+                    else if(Username!=='' && pass==='' && e1==='')
+                    {
+                        alert("Enter password and email!");
+                    }
+                    else
+                    {
+                        alert("Didn't enter anything in the form!");
+                    }
+                }
+                else if(Username!=='' && pass!=='' && e1!=='')
+                {
+                    if(Username==='' && pass!=='' && e1!=='')
+                    {
+
+                        alert("Enter Username!");
+                    }
+                    else if(pass==='' && Username!=='' && e1!=='') 
+                    {
+                        alert("Enter Password!");
+                    }
+                    else if(e1===''  && Username!=='' && pass!=='')
+                    {
+                        alert("Enter Email!");
+                    }
+                    else
+                    {
+                        alert("Login successful!");
+                    }
+                }
+                else
+                {
+                    alert("Login fail!");
+                    
+                }
+
+            }
+        </script>
+    </body>   
+</html>   

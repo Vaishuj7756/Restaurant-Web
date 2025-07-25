@@ -1,0 +1,628 @@
+/* General CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body
+{
+    font-family: 'Poltawski Nowy', serif;
+    overflow-x: hidden;
+}
+/* hero-section */
+#header
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: fiex;
+    text-align: center;
+    align-items: center;
+}
+#hero-section::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/header\ image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#hero-section h1
+{
+    color:#fff;
+    position: absolute;
+    top:200px;
+    text-align: center;
+    align-items: center;
+    left: 400px;
+    font-size: 45px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px #000;
+
+}
+#hero-section h3
+{
+    color:#fff;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top:260px;
+    left: 400px;
+    font-size: 40px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px #000;
+
+}
+#hero-section a
+{
+    color:#fff;
+    position: absolute;
+    top:330px;
+    left: 700px;
+    text-align:center;
+    align-items: center;
+    font-size:30px;
+    padding: 5px 20px 5px 20px;
+    border:3px  solid #fff;
+    text-decoration: none;
+    border-radius:25px;
+}
+#hero-section a:hover
+{
+    background:pink ;
+}
+/* hero-section ends here...*/
+
+/* Header section starts here.. */
+#hero
+{
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height:70px;
+}
+#navbar
+{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0,0.5);
+}
+#navbar h1
+{
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#navbar ul
+{
+    display: flex;
+}
+#navbar ul li
+{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.1rem;
+    text-align: center;
+    font-size: 20px;
+}
+#navbar ul li a:hover
+{
+    background:pink;
+   
+}
+#phone a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.1rem;
+    padding:3px 15px 3px 15px;
+    border:1px solid #fff;
+
+}
+#img.logo
+{
+    height: 20px;
+    width: 20px;
+}
+/* Header section ends here.. */
+
+/* Menu section starts here... */
+#menu
+{
+    padding: 25px 0 25px 0;
+}
+#section
+{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#menu_row
+{
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+#menu_col
+{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+
+}
+#menu_col h2
+{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px ;
+    font-family: cursive;
+}
+#image
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+}
+#image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:5px;
+}
+#index_menu a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 30%;
+}
+#index_menu a:hover
+{
+    background: pink;
+}
+/* Menu section ends here... */
+
+/* Chef section starts here... */
+#chef
+{
+    padding: 25px 0 25px 0;
+}
+#chef_row
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chef_col
+{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+#img
+{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    left: 45px;
+}
+#img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 45px;
+}
+/* Chef section ends here... */
+
+/* About section starts here... */
+#about
+{
+    padding: 25px 0 25px 0;
+
+}
+#about_row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px 0 100px;
+}
+.about_col
+{
+    flex: 1;
+    font-size: 25px;
+}
+#about_img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+#about_img img
+{
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+#about_section
+{
+    background-color: grey;
+}
+/* about section ends here... */
+
+/* Contact section starts here... */
+#contact
+{
+    padding: 25px 0 25px 0;
+    background-image: url("images/contact.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+#contact_row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+.contact_col p,h3
+{
+    font-weight: bold;
+    color: #292929;
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+.contact_col p a
+{
+    text-decoration:none ;
+    color: #292929;
+
+}
+#social a
+{
+    color:rgb(3, 3, 2);
+    margin: 3px;
+}
+.contact_col form
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 70, 70);
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+.contact_col form h2
+{
+    text-align: center;
+    font-family: cursive;
+}
+.contact_col form input
+{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form textarea
+{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form button
+{
+    margin: auto;
+    padding: 10px;
+   
+    border:1px solid black;
+}
+#section.contact_sec
+{
+    padding-top: 20vh;
+}
+/* Contact section ends here... */
+
+/* Footer section starts here... */
+#footer
+{
+     background-color: #292929;
+     padding: 20px;
+     position: relative;
+}
+#footer h5
+{
+    text-align: center;
+    color: #fff;
+
+}
+#footer h5 a
+{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+#top
+{
+    position:absolute;
+    bottom: 12px;
+    right: 12px;
+
+}
+#top a
+{
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* Footer section ends here... */
+
+/* Restaurant Menu starts here... */
+#restaurant_menu
+{
+ 
+    #menu1
+    {
+        padding: 25px 0 25px 0;
+    }
+    #section
+    {
+        padding: 25px 0 25px 0;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    #menu_row
+    {
+        display: flex;
+        padding: 0 100px 0 100px;
+    }
+    #menu_col
+    {
+        box-shadow: 2px 2px 2px #bbb;
+        border: 1px solid #bbb;
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        flex: 1;
+
+    }
+    #menu_col h2
+    {
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        padding: 5px ;
+        font-family: cursive;
+    }
+    #image
+    {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid orange;
+    }
+    #image img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .box
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin:5px;
+    }
+}
+#restaurant_menu button
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 30%;
+}
+#restaurant_menu button:hover
+{
+    background: pink;
+}
+/* Restaurant Menu ends here... */
+
+/* Restaurant about starts here... */
+#resturant_about
+{
+    content: "";
+    position:absolute;
+     height: 100%;
+    width: 100%; 
+    background-image: url(images/abcd.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#h2
+{
+    text-align: center;
+    top: 40px;
+    color:#fff;
+    left: 700px;
+    position: absolute;
+    align-items: center;
+    font-size: 45px;
+}
+#description
+{
+    color:#fff;
+    position: absolute;
+    top:200px;
+    text-align: left;
+    align-items: left;
+    left: 400px;
+    font-size: 35px;
+    padding: 5px;
+   
+}
+/* Restaurant about starts here... */
+
+/* Restaurant chef section starts here.. */
+#resturant_chef
+{
+    background-color: rgb(219, 86, 86);
+}
+#desc
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+/* Restaurant chef section ends here.. */
+
+/* Login section starts here... */
+
+.login_section
+{
+    content: "";
+    position:absolute;
+     height: 100%;
+    width: 100%; 
+    background-image: url(images/login.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 25px;
+
+}
+.login_section label
+{
+    font-weight:bold
+}
+.login_section label:hover
+{
+    
+}
+.login_section button
+{
+    font-size: 20px;
+    font-weight:bold
+}
+.login_section button:hover
+{
+    color: pink;
+}
+.login_section input
+{
+    width: 25pc;
+    height: 2pc;
+}
+.login_section form
+{
+   border-left: 1px solid white;
+   margin-left: 500px;
+   margin-top: 80px;
+   margin-right: 500px;
+   background-color: rgb(169, 245, 245);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
